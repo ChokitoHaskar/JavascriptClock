@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clock</title>
+    <title>SIMPLE CLOCK</title>
     <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/jquery-3.6.1.min.js"></script>
   </head>
 
   <body>
     <div class="noselect" id="title">
-      <h1>SIMPLE CLOCK</h1>
+      <h1>CLOCK</h1>
     </div>
 
-    <div id="contentLayout">
-      <div class="noselect" id="clockLayout">
-        <h1 id="clock"></h1>
-        <h2 id="date"></h2>
+    <div class="noselect" id="contentLayout">
+      <h1 id="clockDigital"></h1>
+      <div id="clockAnalog">
+        <div id="faceAnalog">
+          <div class="hand" id="handHours"></div>
+          <div class="hand" id="handMinutes"></div>
+          <div class="hand" id="handSeconds"></div>
+        </div>
+      </div>
+      <h2 id="date"></h2>
+    </div>
+
+    <div id="buttonLayout">
+      <div id="btnLayout">
+        <button id="setDigital">Digital Clock</button>
+        <button id="setAnalog">Analog Clock</button>
       </div>
     </div>
 
-    <div id="footer">@copy Chokito Haskar - 2022</div>
+    <div id="footer">&copy Chokito Haskar - 2022</div>
 
     <script src="../js/script.js"></script>
   </body>
